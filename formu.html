@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Ejemplo</title>
+<style>
+    body {
+        background-color: #40E0D0; /* Color turquesa */
+    }
+    form {
+        background-color: #ffffff; /* Fondo blanco para el formulario */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+    }
+    input[type="submit"], button[type="submit"] {
+        margin-top: 15px;
+    }
+</style>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+<form action="/ruta_del_servidor" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+        <option value="mexico">México</option>
+        <option value="españa">España</option>
+        <option value="argentina">Argentina</option>
+        <option value="otros">Otros</option>
+    </select><br><br>
+
+    <label>Intereses:</label><br>
+    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+    <label for="deportes">Deportes</label><br>
+    <input type="checkbox" id="musica" name="intereses" value="musica">
+    <label for="musica">Música</label><br><br>
+
+    <label>Género:</label><br>
+    <input type="radio" id="hombre" name="genero" value="hombre">
+    <label for="hombre">Hombre</label><br>
+    <input type="radio" id="mujer" name="genero" value="mujer">
+    <label for="mujer">Mujer</label><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>

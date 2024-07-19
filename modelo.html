@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Vista-Controlador (MVC)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modelo Vista-Controlador (MVC)</h1>
+
+        <div class="section">
+            <h2>Componentes del Modelo Vista-Controlador</h2>
+            <h3>Modelo (Model)</h3>
+            <p><strong>Descripción:</strong> El modelo representa la lógica de negocio y los datos de la aplicación. Es responsable de acceder a la base de datos, realizar cálculos y gestionar la lógica de la aplicación.</p>
+            <p><strong>Funciones:</strong></p>
+            <ul>
+                <li>Gestionar y manipular datos.</li>
+                <li>Notificar a las vistas cuando los datos cambian para que estas puedan actualizarse.</li>
+                <li>Contener la lógica de negocio.</li>
+            </ul>
+
+            <h3>Vista (View)</h3>
+            <p><strong>Descripción:</strong> La vista es responsable de la presentación de los datos. Muestra la información al usuario y envía las acciones del usuario al controlador.</p>
+            <p><strong>Funciones:</strong></p>
+            <ul>
+                <li>Renderizar los datos del modelo al usuario.</li>
+                <li>Escuchar las interacciones del usuario y pasarlas al controlador.</li>
+                <li>Reflejar los cambios en el modelo.</li>
+            </ul>
+
+            <h3>Controlador (Controller)</h3>
+            <p><strong>Descripción:</strong> El controlador actúa como intermediario entre el modelo y la vista. Responde a las acciones del usuario, actualiza el modelo y selecciona la vista adecuada para mostrar los datos.</p>
+            <p><strong>Funciones:</strong></p>
+            <ul>
+                <li>Interpretar las entradas del usuario.</li>
+                <li>Actualizar el modelo basándose en las entradas del usuario.</li>
+                <li>Seleccionar la vista adecuada para mostrar los datos actualizados.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Funcionamiento Básico</h2>
+            <ol>
+                <li><strong>Interacción del Usuario:</strong> El usuario interactúa con la vista (por ejemplo, haciendo clic en un botón o enviando un formulario).</li>
+                <li><strong>Acción del Controlador:</strong> La vista envía la entrada del usuario al controlador correspondiente.</li>
+                <li><strong>Actualización del Modelo:</strong> El controlador procesa la entrada del usuario y realiza las actualizaciones necesarias en el modelo.</li>
+                <li><strong>Notificación de la Vista:</strong> El modelo notifica a la vista que los datos han cambiado.</li>
+                <li><strong>Renderización de la Vista:</strong> La vista obtiene los datos actualizados del modelo y los presenta al usuario.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Ventajas del Modelo Vista-Controlador</h2>
+            <ul>
+                <li><strong>Separación de Responsabilidades:</strong> Cada componente tiene una responsabilidad clara, lo que facilita el desarrollo, mantenimiento y prueba de la aplicación.</li>
+                <li><strong>Reutilización de Código:</strong> La separación de la lógica de negocio y la lógica de presentación permite reutilizar componentes en diferentes partes de la aplicación.</li>
+                <li><strong>Facilidad de Mantenimiento:</strong> Los cambios en la lógica de negocio (modelo) o en la presentación (vista) se pueden realizar de forma independiente, minimizando el riesgo de introducir errores.</li>
+                <li><strong>Escalabilidad:</strong> Facilita la adición de nuevas funcionalidades sin afectar significativamente la arquitectura existente.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Desventajas del Modelo Vista-Controlador</h2>
+            <ul>
+                <li><strong>Complejidad Inicial:</strong> La implementación del patrón MVC puede ser compleja al principio, especialmente para desarrolladores novatos.</li>
+                <li><strong>Sobrecarga de Código:</strong> En aplicaciones pequeñas, el uso de MVC puede introducir una sobrecarga innecesaria debido a la creación de múltiples archivos y clases.</li>
+                <li><strong>Comunicación:</strong> Puede ser necesario un manejo cuidadoso de la comunicación entre el modelo, la vista y el controlador para evitar dependencias cíclicas.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ejemplos de Uso</h2>
+            <ul>
+                <li><strong>Aplicaciones Web:</strong> MVC es ampliamente utilizado en frameworks de desarrollo web como Ruby on Rails, ASP.NET MVC, Django y Laravel.</li>
+                <li><strong>Aplicaciones de Escritorio:</strong> En aplicaciones de escritorio, como las desarrolladas con Java Swing o .NET, el patrón MVC también se utiliza para separar la lógica de negocio de la interfaz de usuario.</li>
+                <li><strong>Aplicaciones Móviles:</strong> Frameworks de desarrollo móvil, como Angular para aplicaciones híbridas y SwiftUI para iOS, adoptan principios del patrón MVC para organizar el código.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Variantes y Evoluciones del MVC</h2>
+            <ul>
+                <li><strong>Modelo Vista Controlador-Modelo (MVVM):</strong> Una variante que introduce el "Model-View-ViewModel", donde el ViewModel actúa como un mediador entre la vista y el modelo, facilitando la vinculación de datos en aplicaciones modernas de interfaces de usuario ricas.</li>
+                <li><strong>Modelo Vista Controlador-Presentador (MVP):</strong> Similar al MVC, pero el presentador (Presenter) maneja más lógica de presentación, facilitando la prueba unitaria de la lógica de la vista.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Conclusión</h2>
+            <p>El Modelo Vista-Controlador (MVC) es un patrón de diseño esencial que promueve una estructura de código clara y mantenible. A pesar de su complejidad inicial, sus beneficios a largo plazo en términos de organización del código, reutilización y escalabilidad lo convierten en una elección popular para el desarrollo de aplicaciones modernas. Su evolución y variantes continúan adaptándose a las necesidades cambiantes del desarrollo de software, ofreciendo herramientas y metodologías robustas para construir aplicaciones eficientes y mantenibles.</p>
+        </div>
+    </div>
+</body>
+</html>

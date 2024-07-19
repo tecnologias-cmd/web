@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Cliente-Servidor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arquitectura Cliente-Servidor</h1>
+
+        <div class="section">
+            <h2>Componentes Principales</h2>
+            <p><strong>Cliente:</strong> Es la parte que inicia la comunicación y realiza solicitudes a un servidor. Los clientes suelen ser dispositivos de usuario final como computadoras, smartphones, o aplicaciones web. Ejemplos típicos de clientes incluyen navegadores web, aplicaciones móviles y programas de correo electrónico.</p>
+            <p><strong>Servidor:</strong> Es la parte que recibe las solicitudes de los clientes, las procesa y devuelve una respuesta. Los servidores son sistemas robustos que pueden manejar múltiples solicitudes simultáneamente y suelen tener recursos más potentes que los clientes. Ejemplos de servidores incluyen servidores web, servidores de base de datos, y servidores de aplicaciones.</p>
+        </div>
+
+        <div class="section">
+            <h2>Funcionamiento Básico</h2>
+            <ol>
+                <li><strong>Solicitud del Cliente:</strong> El cliente envía una solicitud al servidor. Esta solicitud puede ser de diferentes tipos, como una solicitud HTTP para una página web, una consulta SQL a una base de datos, o una solicitud de datos a una API.</li>
+                <li><strong>Procesamiento del Servidor:</strong> El servidor recibe la solicitud, la procesa según la lógica definida y accede a los recursos necesarios (como bases de datos, archivos o servicios externos) para cumplir con la solicitud.</li>
+                <li><strong>Respuesta del Servidor:</strong> El servidor envía una respuesta al cliente. Esta respuesta puede incluir datos solicitados, una página web, un mensaje de error, etc.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Ventajas</h2>
+            <ul>
+                <li><strong>Centralización de Recursos:</strong> Los datos y recursos están centralizados en los servidores, facilitando la administración, la seguridad y las copias de seguridad.</li>
+                <li><strong>Escalabilidad:</strong> Es más sencillo escalar la infraestructura de un servidor potente que actualizar múltiples clientes. Se pueden agregar más servidores para manejar una mayor cantidad de solicitudes.</li>
+                <li><strong>Mantenimiento y Actualización:</strong> Las actualizaciones y el mantenimiento del sistema se pueden realizar en el servidor sin necesidad de modificar los clientes.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Desventajas</h2>
+            <ul>
+                <li><strong>Punto Único de Falla:</strong> Si el servidor falla, todos los clientes conectados a él pueden verse afectados.</li>
+                <li><strong>Costo de Servidores:</strong> Los servidores potentes y sus infraestructuras pueden ser costosos de implementar y mantener.</li>
+                <li><strong>Latencia y Conectividad:</strong> La calidad de la comunicación depende de la red. La latencia y la conectividad pueden afectar el rendimiento y la experiencia del usuario.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ejemplos de Arquitectura Cliente-Servidor</h2>
+            <ul>
+                <li><strong>Web:</strong> Un navegador (cliente) solicita páginas web a un servidor web.</li>
+                <li><strong>Email:</strong> Un cliente de correo electrónico (como Outlook) se conecta a un servidor de correo (como Microsoft Exchange).</li>
+                <li><strong>Bases de Datos:</strong> Una aplicación cliente se conecta a un servidor de base de datos para realizar consultas SQL.</li>
+                <li><strong>APIs:</strong> Aplicaciones móviles que interactúan con servidores a través de APIs RESTful.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Variantes y Evoluciones</h2>
+            <ul>
+                <li><strong>Cliente-Servidor de Dos Capas:</strong> La forma más básica, donde el cliente y el servidor se comunican directamente.</li>
+                <li><strong>Cliente-Servidor de Tres Capas:</strong> Añade una capa intermedia (servidor de aplicaciones) que maneja la lógica de negocio entre el cliente y el servidor de datos.</li>
+                <li><strong>Microservicios:</strong> Una evolución moderna donde la lógica de negocio se divide en múltiples servicios pequeños e independientes que se comunican a través de APIs.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tecnologías Relacionadas</h2>
+            <ul>
+                <li><strong>HTTP/HTTPS:</strong> Protocolos de comunicación para la web.</li>
+                <li><strong>SQL:</strong> Lenguaje de consulta utilizado en servidores de bases de datos.</li>
+                <li><strong>REST:</strong> Estilo de arquitectura para APIs.</li>
+                <li><strong>SOAP:</strong> Protocolo para servicios web.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

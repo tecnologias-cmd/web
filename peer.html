@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Peer-to-Peer (P2P)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arquitectura Peer-to-Peer (P2P)</h1>
+
+        <div class="section">
+            <h2>Definición de Peer-to-Peer (P2P)</h2>
+            <p>La arquitectura Peer-to-Peer (P2P) es un modelo de red en el cual cada nodo o participante (conocido como peer) tiene capacidades y responsabilidades equivalentes. En lugar de tener un servidor centralizado, cada peer actúa tanto como cliente y como servidor, compartiendo recursos directamente con otros peers en la red.</p>
+        </div>
+
+        <div class="section">
+            <h2>Características Principales de la Arquitectura P2P</h2>
+            <ul>
+                <li><strong>Descentralización:</strong> No existe un servidor central; todos los peers son iguales y pueden actuar como clientes y servidores.</li>
+                <li><strong>Distribución de Recursos:</strong> Los recursos como archivos, ancho de banda y capacidad de procesamiento se distribuyen entre todos los peers.</li>
+                <li><strong>Escalabilidad:</strong> La red P2P puede escalar fácilmente agregando más peers sin necesidad de un servidor centralizado.</li>
+                <li><strong>Redundancia:</strong> La información y los recursos se replican entre varios peers, lo que proporciona redundancia y resiliencia ante fallos.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tipos de Redes P2P</h2>
+            <h3>P2P Puras</h3>
+            <p>En una red P2P pura, no hay ningún servidor central ni jerarquía. Todos los peers son iguales y cada uno puede actuar como cliente y servidor.</p>
+
+            <h3>P2P Híbridas</h3>
+            <p>En una red P2P híbrida, existe un servidor central que facilita la conexión entre peers, pero una vez establecida la conexión, los peers pueden comunicarse directamente entre sí.</p>
+        </div>
+
+        <div class="section">
+            <h2>Ventajas de las Redes P2P</h2>
+            <ul>
+                <li><strong>Escalabilidad:</strong> Las redes P2P pueden manejar un gran número de usuarios sin la necesidad de infraestructura centralizada.</li>
+                <li><strong>Resiliencia:</strong> Al no depender de un servidor central, las redes P2P son más resistentes a fallos y ataques.</li>
+                <li><strong>Distribución de Carga:</strong> La carga de procesamiento y el tráfico se distribuyen entre todos los peers, evitando cuellos de botella.</li>
+                <li><strong>Costos Reducidos:</strong> No se requiere de una infraestructura centralizada costosa; los recursos son aportados por los propios usuarios.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Desventajas de las Redes P2P</h2>
+            <ul>
+                <li><strong>Seguridad:</strong> La descentralización puede dificultar la implementación de medidas de seguridad efectivas.</li>
+                <li><strong>Gestión de Recursos:</strong> La variabilidad en la disponibilidad de recursos entre los peers puede afectar el rendimiento de la red.</li>
+                <li><strong>Legalidad:</strong> Las redes P2P a menudo se asocian con la distribución no autorizada de contenidos protegidos por derechos de autor.</li>
+                <li><strong>Complejidad:</strong> La gestión y coordinación de los peers pueden ser más complejas que en una arquitectura centralizada.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Aplicaciones Comunes de las Redes P2P</h2>
+            <ul>
+                <li><strong>Compartición de Archivos:</strong> Aplicaciones como BitTorrent permiten compartir grandes archivos de forma eficiente.</li>
+                <li><strong>Redes de Mensajería:</strong> Protocolos como Skype originalmente utilizaban P2P para la transmisión de voz y video.</li>
+                <li><strong>Blockchain y Criptomonedas:</strong> Tecnologías como Bitcoin utilizan una red P2P para la validación y registro de transacciones.</li>
+                <li><strong>Almacenamiento Distribuido:</strong> Servicios como IPFS y Storj proporcionan almacenamiento descentralizado utilizando redes P2P.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Ejemplo de Funcionamiento de una Red P2P</h2>
+            <p>En una red de compartición de archivos P2P, los usuarios pueden descargar partes de un archivo desde múltiples peers simultáneamente. Un usuario que desea descargar un archivo primero se conecta a un rastreador que le proporciona una lista de peers que tienen el archivo. Luego, el usuario puede descargar partes del archivo de diferentes peers, y al mismo tiempo, compartir las partes que ya ha descargado con otros usuarios.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusión</h2>
+            <p>La arquitectura Peer-to-Peer (P2P) ofrece un modelo de red robusto y escalable que distribuye recursos y tareas entre todos los participantes. Aunque presenta desafíos en términos de seguridad y gestión, su capacidad para manejar grandes volúmenes de tráfico y su resiliencia ante fallos la hacen ideal para aplicaciones de compartición de archivos, mensajería y blockchain. Con el avance de la tecnología y el aumento de la demanda de soluciones descentralizadas, las redes P2P continúan evolucionando y expandiendo su alcance.</p>
+        </div>
+    </div>
+</body>
+</html>
